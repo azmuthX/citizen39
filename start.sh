@@ -22,7 +22,7 @@ printf "${MAGENTA}Author:${RESET} Dr.Zenith\n\n"
 while true; do
     printf "\n${CYAN}Select an option:${RESET}\n"
     printf "1. Configure network (VPN + Tor)\n"
-    printf "2. Start hotspot\n"
+    printf "2. Set up hotspot (optional)\n"
     printf "3. Dial a call with voice modulation\n"
     printf "4. View logs\n"
     printf "5. Exit\n"
@@ -35,18 +35,13 @@ while true; do
             bash ./scripts/network_setup.sh
             ;;
         2)
-            printf "${CYAN}Turning on hotspot...${RESET}\n"
+            printf "${CYAN}Setting up hotspot...${RESET}\n"
             bash ./scripts/hotspot.sh
             ;;
         3)
-            printf "${GREEN}Enter the country code (e.g., +1): ${RESET}"
-            read COUNTRY_CODE
-            printf "${GREEN}Enter the mobile number: ${RESET}"
-            read MOBILE_NUMBER
-
             printf "${CYAN}Starting voice modulation and dialing...${RESET}\n"
             bash ./scripts/voice_mod.sh &
-            bash ./scripts/voip_call.sh "$COUNTRY_CODE" "$MOBILE_NUMBER"
+            bash ./scripts/voip_call.sh
             ;;
         4)
             printf "${CYAN}Displaying logs:${RESET}\n"
