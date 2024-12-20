@@ -48,7 +48,9 @@ while true; do
             cat ./logs/v0icex.log
             ;;
         5)
-            printf "${RED}Exiting...${RESET}\n"
+            printf "${RED}Cleaning up logs...${RESET}\n"
+            rm -f ./logs/v0icex.log
+            printf "${CYAN}Deleting logs successfull... Now Exiting...${RESET}\n"
             exit 0
             ;;
         *)
