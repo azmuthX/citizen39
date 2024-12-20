@@ -25,14 +25,14 @@ configure_linphone() {
     echo -e "${CYAN}[+] Configuring Linphone SIP account...${RESET}"
     cat << EOF > ~/.linphonerc
 [auth_info_0]
-username=your_username
-userid=your_userid
-password=your_password
-realm=sip_provider_domain
+username=prithvi669
+userid=prithvi669
+password=jvNcKSUr@x5f@jB
+realm=sip.linphone.org
 
 [proxy_0]
-reg_proxy=sip:sip_provider_domain
-reg_identity=sip:your_username@sip_provider_domain
+reg_proxy=sip:sip.linphone.org
+reg_identity=sip:prithvi669@sip.linphone.org
 reg_expires=3600
 EOF
     echo -e "${GREEN}[+] Linphone SIP account configured successfully.${RESET}"
