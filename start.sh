@@ -16,7 +16,7 @@ printf "${RESET}\n"
 
 # GitHub information
 printf "${YELLOW}GitHub Repository:${RESET} https://github.com/azmuthX/citizen39.git\n"
-printf "${MAGENTA}Author:${RESET} Dr. AZ \n\n"
+printf "${MAGENTA}Author:${RESET} Dr.AZv \n\n"
 
 # Step1: Configure network(Tor+VPN)
 printf "${CYAN} Configuring network ...${RESET}\n"
