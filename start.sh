@@ -32,16 +32,16 @@ while true; do
     case $CHOICE in
         1)
             printf "${CYAN}Configuring network...${RESET}\n"
-            bash ./scripts/network_setup.sh
+            bash ./script/network_setup.sh
             ;;
         2)
             printf "${CYAN}Setting up hotspot...${RESET}\n"
-            bash ./scripts/hotspot.sh
+            bash ./script/hotspot.sh
             ;;
         3)
             printf "${CYAN}Starting voice modulation and dialing...${RESET}\n"
-            bash ./scripts/voice_mod.sh &
-            bash ./scripts/voip_call.sh
+            bash ./script/voice_mod.sh &
+            bash ./script/voip_call.sh
             ;;
         4)
             printf "${CYAN}Displaying logs:${RESET}\n"
