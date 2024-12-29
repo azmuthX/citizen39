@@ -19,7 +19,7 @@ printf "${YELLOW}GitHub Repository:${RESET} https://github.com/azmuthX/citizen39
 printf "${MAGENTA}Author:${RESET} Dr.AZv \n\n"
 
 # Step1: Configure network(Tor+VPN)
-printf "${CYAN} Configuring network ...${RESET}\n"
+printf "${YELLOW} Configuring network ...${RESET}\n"
 bash ./script/network_setup.sh
 
 # Step2: Setting up hotspot(optional)
@@ -41,13 +41,13 @@ while true; do
             bash ./script/voip_call.sh
             ;;
         2)
-            printf "${CYAN}Displaying logs:${RESET}\n"
+            printf "${MAGENTA}Displaying logs:${RESET}\n"
             cat ./logs/v0icex.log
             ;;
         3)
-            printf "${RED}Cleaning up logs...${RESET}\n"
+            printf "${CYAN}Cleaning up logs...${RESET}\n"
             rm -f ./logs/v0icex.log
-            printf "${CYAN}Deleting logs successfull... Now Exiting...${RESET}\n"
+            printf "${RED}Deleting logs successfull... Now Exiting...${RESET}\n"
             exit 0
             ;;
         *)
