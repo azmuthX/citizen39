@@ -22,7 +22,7 @@ check_command() {
 
 # Function to configure Linphone SIP account
 configure_linphone() {
-    echo -e "${CYAN}[+] Configuring Linphone SIP account...${RESET}"
+    echo -e "${YELLOW}[+] Configuring Linphone SIP account...${RESET}"
     cat << EOF > ~/.linphonerc
 [auth_info_0]
 username=prithvi669
